@@ -1,5 +1,5 @@
 # Jortt API client for PHP
-PHP WEB API JSON for [Jortt BV](https://jortt.nl)
+PHP WEB API JSON for [Jortt B.V](https://jortt.nl)
 
 ## Requirements ##
 To use the Jortt API client, the following things are required:
