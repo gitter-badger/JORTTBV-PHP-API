@@ -6,7 +6,7 @@ To use the Jortt API client, the following things are required:
 
 + Visit website for free [Jortt account](https://app.jortt.nl/aanmelden/gratis)
 + Create a new [profile](https://app.jortt.nl/profile/api) to generate API keys
-+ PHP >= 5.2
++ PHP 5.2 or 5.5
 + PHP cURL extension
 
 ## Getting started ##
@@ -21,12 +21,12 @@ $command = array(
 		'customer_id'=> '',
 		'delivery_period'=> '',
 		'reference'=> '',
-		'line_items' => array(
+		'line_items' => array([
 			'vat' => 21.00,
 			'amount' => 0.00,
 			'quantity' => 1,
 			'description' => ''
-		)
+		])
 	)
 );
 

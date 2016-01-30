@@ -6,12 +6,12 @@ $command = array(
 		'customer_id'=> '',
 		'delivery_period'=> '',
 		'reference'=> 'test',
-		'line_items' => array(
+		'line_items' => array([
 			'vat' => '21',
 			'amount' => '1.00',
 			'quantity' => '1',
 			'description' => ''
-		)
+		])
 	)
 );
 $api->request($command, 'invoices');
