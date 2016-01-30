@@ -8,13 +8,19 @@
 	
 	class JorttBV_API_Client
 	{
-		private $APPNAME		= '';
+		private $APPNAME	= '';
 		private $APITOKEN	= '';
 		private $APIURL		= 'https://app.jortt.nl/api/';
 		#
 		public function request($string, $select)
 		{
+			# Curl installed?
+			if (!function_exists('curl_init')){
+				die('Curl is not installed.');
+			}
+   			#
 			$request = curl_init();
+			# Encode JSON.
 			$command = json_encode(http_build_query($string));
 			$headers = array(
 				'Accept: application/json',
@@ -30,8 +36,8 @@
 			curl_setopt($request, CURLOPT_URL, $config['APIURL'].$select);
 			curl_setopt($request, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
 			curl_setopt($request, CURLOPT_POST, true);
-			curl_setopt($request, CURLOPT_TIMEOUT, 120);
-			curl_setopt($request, CURLOPT_CONNECTTIMEOUT, 15);
+			curl_setopt($request, CURLOPT_TIMEOUT, 120);		# timeout on response
+			curl_setopt($request, CURLOPT_CONNECTTIMEOUT, 15);	# timeout on connect
 			curl_setopt($request, CURLOPT_POSTFIELDS, $command);
 			curl_setopt($request, CURLOPT_RETURNTRANSFER, true);
 			curl_setopt($request, CURLOPT_HTTPHEADER, $headers);
@@ -44,7 +50,10 @@
 				die('<p>Curl failed: '.curl_error($request).'</p>');
 			}
 			curl_close($request);
+			# Decode JSON response.
 			$response = json_decode($result, true);
+			#
 			return $response;
 		}
+
 	}
