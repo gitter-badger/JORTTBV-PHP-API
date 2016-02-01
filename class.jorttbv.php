@@ -49,6 +49,7 @@
 			if ($result == FALSE) {
 				die('<p>Curl failed: '.curl_error($request).'</p>');
 			}
+			# Close connection
 			curl_close($request);
 			# Decode JSON response.
 			$response = json_decode($result, true);
