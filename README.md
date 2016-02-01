@@ -1,6 +1,8 @@
 # Jortt API client for PHP
 PHP WEB API JSON for [Jortt B.V](https://jortt.nl)
 
+[![Build Status](https://travis-ci.org/Extreemhost/JORTTBV-PHP-WEB-API.svg?branch=master)](https://travis-ci.org/Extreemhost/JORTTBV-PHP-WEB-API)
+
 ## Requirements ##
 To use the Jortt API client, the following things are required:
 
