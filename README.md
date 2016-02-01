@@ -1,6 +1,7 @@
 # Jortt API client for PHP
 PHP WEB API JSON for [Jortt B.V](https://jortt.nl)
 
+[![Floobits Status](https://floobits.com/Extreemhost/JORTTBV-PHP-WEB-API.svg)](https://floobits.com/Extreemhost/JORTTBV-PHP-WEB-API/redirect)
 [![Build Status](https://travis-ci.org/Extreemhost/JORTTBV-PHP-WEB-API.svg?branch=master)](https://travis-ci.org/Extreemhost/JORTTBV-PHP-WEB-API)
 
 ## Requirements ##
