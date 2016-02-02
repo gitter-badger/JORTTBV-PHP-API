@@ -1,4 +1,6 @@
 # Jortt API client for PHP
+
+[![Join the chat at https://gitter.im/Extreemhost/JORTTBV-PHP-API](https://badges.gitter.im/Extreemhost/JORTTBV-PHP-API.svg)](https://gitter.im/Extreemhost/JORTTBV-PHP-API?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 PHP WEB API JSON for [Jortt B.V](https://jortt.nl)
 
 [![Floobits Status](https://floobits.com/Extreemhost/JORTTBV-PHP-API.svg)](https://floobits.com/Extreemhost/JORTTBV-PHP-API/redirect)
@@ -43,4 +45,4 @@ If you wish to learn more about our API, please visit the [API Documentation](ht
 [BSD (Berkeley Software Distribution) License](https://opensource.org/licenses/bsd-license.php). Copyright (c) 2016, Extreemhost.
 
 ## Support ##
- Contact: [www.extreemhost.nl](https://extreemhost.nl) — info@extreemhost — +31 316-23 40 40
+ Contact: [www.extreemhost.nl](https://extreemhost.nl) â€” info@extreemhost â€” +31 316-23 40 40
