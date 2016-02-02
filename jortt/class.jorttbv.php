@@ -16,7 +16,7 @@
 		{
 			# Curl installed?
 			if (!function_exists('curl_init')){
-				die('Curl is not installed.');
+				return 'Curl is not installed.';
 			}
    			#
 			$request = curl_init();
@@ -47,7 +47,7 @@
 			curl_setopt($request, CURLOPT_USERPWD, $config['APPNAME'].':'.$config['APITOKEN']);
 			$result = curl_exec($request);
 			if ($result == FALSE) {
-				die('<p>Curl failed: '.curl_error($request).'</p>');
+				return '<p>Curl failed: '.curl_error($request).'</p>';
 			}
 			# Close connection
 			curl_close($request);
