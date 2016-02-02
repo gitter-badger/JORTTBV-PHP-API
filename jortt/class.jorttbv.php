@@ -8,8 +8,8 @@
 	
 	class JorttBV_API_Client
 	{
-		private $APPNAME	= '';
-		private $APITOKEN	= '';
+		private $APPNAME	= 'Demo';
+		private $APITOKEN	= 'dh58f-kouie45-dfdffd-4gfgf';
 		private $APIURL		= 'https://app.jortt.nl/api/';
 		#
 		public function request($string, $select)
@@ -29,9 +29,9 @@
 				'Connection: Keep-Alive'
 			);
 			$config = array(
-				'APPNAME' => 'Demo',
-				'APITOKEN' => 'f0000F-f00f-f00f-f00f-f0000000f',
-				'APIURL' => 'https://app.jortt.nl/api/'
+				'APPNAME'	=> $this->APPNAME,
+				'APITOKEN'	=> $this->APITOKEN,
+				'APIURL'	=> $this->APIURL
 			);
 			curl_setopt($request, CURLOPT_URL, $config['APIURL'].$select);
 			curl_setopt($request, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
